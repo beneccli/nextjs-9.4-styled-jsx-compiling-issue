@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "styled-jsx": {
+          "plugins": ["styled-jsx-plugin-postcss"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "babel-plugin-root-import"
+    ]
+  ],
+  "env": { // For React Native
+    "production": {
+      "plugins": [
+        "babel-plugin-root-import"
+      ]
+    }
+  }
+}
